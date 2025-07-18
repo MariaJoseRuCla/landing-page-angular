@@ -11,5 +11,5 @@ import { BuyButtonComponent } from '../buy-button/buy-button';
 export class WelcomeComponent {
   productName = 'Kindle Paperwhite';
   productDescription = 'Lee cómodamente tanto de día como de noche.';
-  productPrice = 119; // mejor número, no string
+  productPrice = 119; 
 }
