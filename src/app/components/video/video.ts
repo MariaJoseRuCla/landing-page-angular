@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-video',
-  imports: [],
+  standalone: true, 
   templateUrl: './video.html',
-  styleUrl: './video.css'
+  styleUrls: ['./video.css']
 })
-export class Video {
+export class VideoComponent {
 
 }

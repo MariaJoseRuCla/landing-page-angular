@@ -5,11 +5,12 @@ import { FeaturesComponent } from './components/features/features';
 import { QuestionsComponent } from './components/questions/questions';
 import { GalleryComponent } from './components/gallery/gallery';
 import { TableComponent } from './components/table/table';
+import { VideoComponent } from './components/video/video';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, WelcomeComponent, FeaturesComponent, QuestionsComponent, GalleryComponent, TableComponent],
+  imports: [RouterOutlet, WelcomeComponent, FeaturesComponent, QuestionsComponent, GalleryComponent, TableComponent, VideoComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
