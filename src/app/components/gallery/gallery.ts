@@ -1,11 +1,12 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';  // Importa CommonModule para directivas estructurales como *ngFor y *ngIf
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
+  imports: [CommonModule],  // Aquí agregas CommonModule
   templateUrl: './gallery.html',
   styleUrls: ['./gallery.css'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],  // Muy importante para reconocer <swiper-slide> y <swiper-container>
 })
 export class GalleryComponent {
   images = [
@@ -14,4 +15,19 @@ export class GalleryComponent {
     '/images/3.jpg',
     '/images/4.png',
   ];
+
+  currentIndex = 0;
+
+  prev() {
+    this.currentIndex =
+      (this.currentIndex - 1 + this.images.length) % this.images.length;
+  }
+
+  next() {
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+  }
+
+  goTo(index: number) {
+    this.currentIndex = index;
+  }
 }
