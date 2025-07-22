@@ -13,7 +13,7 @@
       class="w-full h-80 object-cover rounded-lg shadow-md transition-transform duration-500"
     />
 
-    <!-- Botones de navegación -->
+    
     <button
       (click)="prev()"
       class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full hover:bg-gray-900"
@@ -30,7 +30,7 @@
     </button>
   </div>
 
-  <!-- Paginación (dots) -->
+  
   <div class="flex justify-center mt-4 space-x-3">
     <button
       *ngFor="let image of images; let i = index"

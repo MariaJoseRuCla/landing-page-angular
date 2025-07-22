@@ -1,0 +1,19 @@
+<div class="flex space-x-1 justify-center mb-4">
+  <label *ngFor="let star of stars" class="cursor-pointer text-4xl select-none">
+    <input 
+      type="radio"
+      name="rating"
+      class="hidden"
+      [value]="star"
+      (click)="setRating(star)"
+    />
+    <span
+      (mouseenter)="setHover(star)"
+      (mouseleave)="setHover(null)"
+      [class.text-yellow-400]="star <= (hover ?? rating)"
+      [class.text-gray-300]="star > (hover ?? rating)"
+    >
+      &#9733;
+    </span>
+  </label>
+</div>

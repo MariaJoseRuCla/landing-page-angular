@@ -6,11 +6,14 @@ import { QuestionsComponent } from './components/questions/questions';
 import { GalleryComponent } from './components/gallery/gallery';
 import { TableComponent } from './components/table/table';
 import { VideoComponent } from './components/video/video';
+import { StarRatingComponent } from './components/star-rating/star-rating';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, WelcomeComponent, FeaturesComponent, QuestionsComponent, GalleryComponent, TableComponent, VideoComponent],
+  imports: [RouterOutlet, WelcomeComponent, FeaturesComponent, 
+          QuestionsComponent, GalleryComponent, TableComponent, 
+          VideoComponent, StarRatingComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

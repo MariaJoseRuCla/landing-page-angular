@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';  // Importa CommonModule para directivas estructurales como *ngFor y *ngIf
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule],  // Aquí agregas CommonModule
+  imports: [CommonModule], 
   templateUrl: './gallery.html',
   styleUrls: ['./gallery.css'],
 })
