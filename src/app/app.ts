@@ -7,13 +7,14 @@ import { GalleryComponent } from './components/gallery/gallery';
 import { TableComponent } from './components/table/table';
 import { VideoComponent } from './components/video/video';
 import { StarRatingComponent } from './components/star-rating/star-rating';
+import { ReviewButtonComponent } from './components/review-button/review-button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, WelcomeComponent, FeaturesComponent, 
           QuestionsComponent, GalleryComponent, TableComponent, 
-          VideoComponent, StarRatingComponent],
+          VideoComponent, StarRatingComponent, ReviewButtonComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
