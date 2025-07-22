@@ -1,0 +1,14 @@
+<section class="reviews-container"> 
+  <div *ngIf="loading" class="loading">Cargando opiniones...</div>
+
+  <ul *ngIf="!loading && reviews.length > 0" class="reviews-list">
+    <li *ngFor="let review of reviews" class="review-item">
+      <h3 class="review-user">{{ review.nombre }}</h3>
+
+      <!-- Mostrar estrellas usando StarRatingComponent, solo lectura -->
+      <app-star-rating [rating]="review.rating" [readOnly]="true"></app-star-rating>
+
+      <p class="review-text">{{ review.texto }}</p>
+    </li>
+  </ul>
+</section>

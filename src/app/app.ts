@@ -8,13 +8,14 @@ import { TableComponent } from './components/table/table';
 import { VideoComponent } from './components/video/video';
 import { StarRatingComponent } from './components/star-rating/star-rating';
 import { ReviewButtonComponent } from './components/review-button/review-button';
+import { ReviewsComponent } from './components/reviews/reviews';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, WelcomeComponent, FeaturesComponent, 
           QuestionsComponent, GalleryComponent, TableComponent, 
-          VideoComponent, StarRatingComponent, ReviewButtonComponent],
+          VideoComponent, StarRatingComponent, ReviewButtonComponent, ReviewsComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
